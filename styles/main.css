@@ -1,0 +1,173 @@
+/* CSS RESET */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Global Styling*/
+
+.container {
+  width: 80%;
+  height: auto;
+  border: 3px solid red;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+ .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+ /* Hero Section */
+
+ .hero-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: .5em .25em;
+  border: 1px solid black;
+ }
+
+ .hero-subtitle {
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  padding: .25em;
+ }
+
+ /* Intro Section */
+
+ .intro-section {
+  margin: .5em;
+  text-align: center;
+ }
+
+ .intro-title {
+  font-size: 4rem;
+  text-align: left;
+
+ }
+
+
+ .intro-subtitle {
+  font-size: 2.5rem;
+  line-height: 1.3;
+ }
+
+ .intro-text {
+  font-size: 1.15rem;
+  line-height: 1.3;
+ }
+
+ /* Blog Post Cards Styling */
+
+ .blog-posts {
+  margin: 1em .5em;
+
+ }
+
+ .blog-card {
+  border: 2px solid black;
+  
+  margin-bottom: .5em;
+ }
+
+ .blog-text {
+  padding: .5em;
+ }
+
+ .image-attribute {
+  display: none;
+ }
+
+ .main-title {
+  font-size: 2rem;
+  
+ }
+
+ .core {
+  text-align: right;
+ }
+
+ .description {
+  padding: .5em 0;
+ }
+
+ .blog-title {
+  font-size: 1.5rem;
+ }
+
+ .blog-date {
+  font-weight: 300;
+  padding-top: .1em;
+  font-size: .9rem;
+
+ }
+
+.author {
+  font-weight: bold;
+  font-style: italic;
+ 
+}
+
+.blog-description {
+  font-size: 1rem;
+  line-height: 1.4;
+  padding: 1em 0;
+}
+
