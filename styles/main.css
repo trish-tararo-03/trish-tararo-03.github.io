@@ -4,6 +4,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  max-width: 1200px;
 }
 
 /* Remove default margin */
