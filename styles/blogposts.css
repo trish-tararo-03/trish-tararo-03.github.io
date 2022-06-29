@@ -1,0 +1,208 @@
+/* CSS RESET */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  max-width: 1200px;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Global Styling*/
+
+/* font styles
+font-family: 'Martel', serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Work Sans', sans-serif;
+*/
+.container {
+  width: 80%;
+  height: auto;
+  /* border: 3px solid red; */
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  
+}
+ .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+ /* Nav Styling */
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto Condensed', sans-serif;
+
+} 
+.nav-menu {
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  padding: 0;
+  
+}
+
+.nav-item {
+  list-style: none;
+  text-align: center;
+  margin-right: .5em;
+}
+
+.logo {
+  font-family: 'Roboto Condensed', sans-serif;
+  border: 1px solid black;
+  padding: .5em;
+  margin-top: 1em;
+}
+
+/* Blog Post Styling */
+ .blog-date {
+  font-size: .9rem;
+  font-style: italic;
+  border-bottom: 1px solid black;
+  font-family: 'Martel', serif;
+  
+ }
+
+ .main-title {
+  padding: .5em;
+  font-family: 'Roboto Condensed', sans-serif;
+ }
+
+ .subtitle {
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
+  padding: .8em;
+  font-family: 'Work Sans', sans-serif;
+ }
+
+ .main-text {
+  padding: 0 .5em;
+  font-family: 'Martel', serif;
+ }
+
+ .italics {
+  font-style: italic;
+ }
+
+ .list {
+  margin: 0;
+  
+ }
+
+ .bulletpoints {
+  padding: 0.5em;
+  font-family: 'Martel', serif;
+ }
+
+ .title {
+  padding: .5em;
+  text-decoration: underline;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+
+ }
+
+ .image {
+  margin: .5em 0;
+ }
+
+.footer {
+  text-align: center;
+  margin-top: .5em;
+  font-family: 'Roboto Condensed', sans-serif;
+
+
+}
+
+@media screen and (min-width:768px){
+  .main-title {
+    font-size: 2rem;;
+  }
+
+  .main-text {
+    font-size: 1.125rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+  .image {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .main-title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+
+  .main-text {
+    font-size: 1.25rem;
+  }
+  
+  .title {
+    font-size: 1.75rem;
+    text-align: left;
+  }
+}
