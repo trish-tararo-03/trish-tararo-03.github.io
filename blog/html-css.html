@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moonlit Coder | CSS Positions</title>
+    <link href="/styles/blogposts.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Martel&family=Roboto+Condensed:ital,wght@0,700;1,700&family=Work+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="header container row">
+      <nav class="nav">
+        <div class="logo"><a href="/">Moonlit Coder .</a></div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="/" class="nav-link">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a href="/#techposts">BLOG POSTS</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main class="main container row">
+      <h4 class="blog-date">29 June 2022</h4>
+      <h1 class="main-title">CSS Positions</h1>
+      <img src="/images/target.jpg" alt="target practice" class="image">
+      <h2 class="subtitle">The differences between relative, aboslute and fixed positioning.</h2>
+
+      <p class="main-text">
+        CSS is a beautiful and powerful tool we use to add flair and style to our projects. One of the properties we use is the position property. This allows us to manipulate the position of any element using the top, right, bottom, left and z-index values. The five values that the position property can have are:</p> 
+        <ul class="list">
+          <li class="bulletpoints">Static</li>
+          <li class="bulletpoints">Relative</li>
+          <li class="bulletpoints">Absolute</li>
+          <li class="bulletpoints">Fixed</li>
+          <li class="bulletpoints">Sticky</li>
+        </ul>
+        <p class="main-text">
+        By default, all HTML elements will have a position: static property. This simply means that the elements will follow the normal flow of your HTML document. We can then use the position property to manipulate the final position of an element on the page. In this article we will look at 3 different values: Relative, Absolute and Fixed. To explain their differences, we must explain their individual uses.
+      </p>
+
+      <section class="section" id="#relative">
+        <h2 class="title">
+          Relative positioning
+        </h2>
+        
+        <p class="main-text">
+          Imagine you have two boxes like the example below:
+      
+      <img src="/images/relative-positioning.jpg" alt="relative positioning example" class="image">
+    
+      <br>In this example we can see where the original position of the box would be. With the position:relative property, we can move the box anywhere that is <span class="italics">relative</span> to it's original position! Wonder why they named it that!
+      </section>
+
+      <section class="section" id="#absolute">
+        <h2 class="title">Absolute Positioning</h2>
+        <p class="main-text">
+       Now imagine you have 5 boxes like the example below:
+       The dotted line represents the big box that contains the other boxes.
+       <img src="/images/absolute-positioning.jpg" alt="absolute positioning example" class="image">
+       <br>With position:absolute we can place the green box whereever we want! That is <span class="italics">absolute!</span> <br>However, there are a couple of things to note:<br>One is that the green box needs a parent, (or a big box) to reference it position to. <br>Two is that it would be ignored by the other boxes.
+      </p>
+    </section>
+    <section class="section" id="#fixed"> 
+      <h2 class="title">Fixed Positioning</h2>
+      <p class="main-text">
+        Now take a look at the example below:
+        <br><img src="/images/fixed-position.jpg" alt="fixed position example" class="image">
+        <br>Imagine you have two boxes, a big box, and the green one within it. With position:fixed we can use a hot glue gun to stick the botton of the green box to the big box. This way, it's position wont change, even if you throw the big box! 
+      </p>
+    </section>
+
+    <section class="section">
+      <h2 class="title">The Difference?</h2>
+      <!-- <p class="main-text"> -->
+        <ul class="list">
+          <li class="bulletpoints">  Using relative positioning we can move a box relative to its original position.</li>
+          <li class="bulletpoints">    Using absolute positioning, we can move a box anywhere we want, as long as it has a parent box for reference, and it is okay with being ignored by the other boxes.</li>
+          <li class="bulletpoints">Using fixed positioning, we can glue the box down so that it wont move, no matter what happens.</li>
+        </ul>
+ 
+      <!-- </p> -->
+
+      <div class="summary">
+        <h2 class="title">Conclusion</h2>
+        <p class="main-text">Using the positioning property will be very useful with more practise. I believe you will find specific use cases for each value. Play around! Practise moving boxes (or proper elements) around the page! For a more technical explanation check out this video by <br><a href="https://youtu.be/jx5jmI0UlXU" target="_blank">Web Dev Simplified</a></p>
+      </div>
+    </section>
+    
+    </main>
+    <footer class="footer"><small>Moonlit Coder . 2022</small></footer>
+  </body>
+</html>
