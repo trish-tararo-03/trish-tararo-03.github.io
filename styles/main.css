@@ -4,7 +4,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  max-width: 1200px;
+
 }
 
 /* Remove default margin */
@@ -32,6 +32,9 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  max-width: 1200px;
+  margin: 0 auto;
+
 }
 
 
@@ -68,8 +71,8 @@ font-family: 'Work Sans', sans-serif;
 .container {
   width: 80%;
   height: auto;
-  border: 3px solid red;
-  max-width: 1200px;
+  /* border: 3px solid red; */
+
   margin: 0 auto;
   
 }
@@ -83,9 +86,10 @@ font-family: 'Work Sans', sans-serif;
  /* Hero Section */
 
  .hero-title {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   text-align: center;
-  margin: .5em .25em;
+  margin: 1em 1.5em;
+  padding: .5em;
   border: 1px solid black;
   font-family: 'Roboto Condensed', sans-serif;
  }
@@ -106,6 +110,9 @@ font-family: 'Work Sans', sans-serif;
   justify-content: center;
   font-family: 'Roboto Condensed', sans-serif;
 
+  width: 100%;
+  /* border: 3px solid red; */
+
 } 
 .nav-menu {
   display: flex;
@@ -118,7 +125,15 @@ font-family: 'Work Sans', sans-serif;
 .nav-item {
   list-style: none;
   text-align: center;
-  margin-right: .5em;
+  margin: 0 1em;
+  display: block;
+  
+  /* border: 2px solid green; */
+
+}
+
+.nav-item > a {
+  text-decoration: none;
 }
  /* Intro Section */
 
@@ -223,7 +238,13 @@ font-family: 'Work Sans', sans-serif;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1em;
+    justify-items: center;
     
+    
+  }
+
+  .title-description {
+    grid-column: span 2;
   }
   .core {
     text-align: left;
@@ -232,7 +253,9 @@ font-family: 'Work Sans', sans-serif;
 }
 
 @media screen and (min-width: 1200px) {
-  
+  .blog-card {
+    width: 80%;
+  }
 }
 
 
