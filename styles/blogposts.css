@@ -4,7 +4,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  max-width: 1200px;
+  
 }
 
 /* Remove default margin */
@@ -32,6 +32,8 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 
@@ -78,9 +80,11 @@ h4, p {
 .container {
   width: 80%;
   height: auto;
-  border: 3px solid red;
-
   margin: 0 auto;
+
+  /* border: 3px solid red; */
+
+  
   
 }
  .row {
@@ -97,6 +101,10 @@ h4, p {
   align-items: center;
   justify-content: center;
   font-family: 'Roboto Condensed', sans-serif;
+  width: 100%;
+  
+  /* border: 2px solid red; */
+  margin: 0 auto;
 
 } 
 .nav-menu {
@@ -110,14 +118,24 @@ h4, p {
 .nav-item {
   list-style: none;
   text-align: center;
-  margin-right: .5em;
+  margin: .5em;
+}
+
+.nav-item > a {
+  text-decoration: none;
+  display: block;
 }
 
 .logo {
   font-family: 'Roboto Condensed', sans-serif;
   border: 1px solid black;
-  padding: .5em;
+  padding: 1em;
   margin-top: 1em;
+  
+}
+
+.logo > a {
+  text-decoration: none;
 }
 
 /* Blog Post Styling */
@@ -126,15 +144,17 @@ h4, p {
   font-style: italic;
   border-bottom: 1px solid black;
   font-family: 'Martel', serif;
+  margin-top: 2em;
   
  }
 
  .main-title {
   padding: .5em;
+  text-align: center;
  }
 
  .subtitle {
-  font-size: 1.2rem;
+  font-size: 1.125rem;
   font-style: italic;
   text-align: center;
   padding: .8em;
@@ -142,7 +162,7 @@ h4, p {
  }
 
  .main-text {
-  padding: 0 .5em;
+  padding: .5em;
   font-family: 'Martel', serif;
  }
 
@@ -169,27 +189,27 @@ h4, p {
  }
 
 .question {
- 
   font-size: 1.15rem;
   padding: .5rem;
   margin: 1em;
-  line-height: 1.3;
+  line-height: 1.2;
 } 
  .image {
   margin: .5em 0;
  }
 
 .footer {
+
   text-align: center;
   margin-top: .5em;
   font-family: 'Roboto Condensed', sans-serif;
-
+  /* border: 2px solid red; */
 
 }
 
 @media screen and (min-width:768px){
   .main-title {
-    font-size: 2rem;;
+    font-size: 2rem;
   }
 
   .main-text {
@@ -215,10 +235,24 @@ h4, p {
 
   .main-text {
     font-size: 1.25rem;
+    
   }
+
+  .question, .main-text {
+    width: 80%;
+    margin: 0 auto;
+  } 
   
   .title {
     font-size: 1.75rem;
-    text-align: left;
+   
+  }
+
+  .image {
+    width: 60%;
+  }
+
+  .question {
+    font-size: 1.4rem;
   }
 }
