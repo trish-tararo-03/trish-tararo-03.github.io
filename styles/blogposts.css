@@ -83,15 +83,18 @@ h4, p {
   margin: 0 auto;
 
   /* border: 3px solid red; */
-
-  
-  
 }
  .row {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+ }
+
+ /* header styling */
+ .header {
+  background: rgb(24,40,72);
+background: radial-gradient(circle, rgba(24,40,72,1) 20%, rgba(75,108,183,1) 45%, rgba(11,25,52,1) 75%);
  }
 
  /* Nav Styling */
@@ -124,6 +127,7 @@ h4, p {
 .nav-item > a {
   text-decoration: none;
   display: block;
+  color: #fffffe;
 }
 
 .logo {
@@ -131,6 +135,14 @@ h4, p {
   border: 1px solid black;
   padding: 1em;
   margin-top: 1em;
+  background-color: #fffffe;
+  color: black;
+  
+  box-shadow:
+  6px 9px 18px rgba(0, 0, 0, .99)
+;
+
+
   
 }
 
@@ -199,7 +211,8 @@ h4, p {
  }
 
 .footer {
-
+  background-color: #182848;
+  color: #fffffe;
   text-align: center;
   margin-top: .5em;
   font-family: 'Roboto Condensed', sans-serif;
