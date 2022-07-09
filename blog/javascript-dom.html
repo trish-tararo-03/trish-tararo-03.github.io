@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moonlit Coder | JavaScript Explained</title>
+    <link href="/styles/blogposts.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Martel&family=Roboto+Condensed:ital,wght@0,700;1,700&family=Work+Sans:ital,wght@0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <header class="header">
+    <div class="container row">
+      <nav class="nav">
+        <div class="logo"><a href="/">Moonlit Coder .</a></div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="/" class="nav-link">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a href="/#techposts">BLOG POSTS</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main container row">
+    <h4 class="blog-date">09 July 2022</h4>
+    <h1 class="main-title">JavaScript Explained...(?)</h1>
+    <img
+      src="/images/html-css-js-books.jpg"
+      alt="two books on the subject of HTML, CSS, JS, JQuery, leaning against a small pot plant"
+      class="image"
+    />
+    <h2 class="subtitle">
+      I try to explain foundational concepts of JavaScript...
+    </h2>
+
+    <div class="section-card">
+      <p class="main-text">
+        Right now, JavaScript for me, feels like a series of pipes, where you
+        know what each pipe is for, but it all links into one another, they
+        bend, loop around corners, some come to a dead end, some are left
+        open-ended… Dang .
+      </p>
+      <p class="main-text">
+        This blogpost is probably going to be a dense one. In it we are going to
+        cover :
+      </p>
+      <ul class="list" id="js-links">
+        <li class="bulletpoints">
+          The
+          <a href="#relationship" class="bulletpoint-link js">relationship</a>
+          between HTML, CSS and JavaScript.
+        </li>
+
+        <li class="bulletpoints">
+          An explanation on
+          <a href="#control-flow" class="bulletpoint-link js"
+            >control flow and loops.</a
+          >
+        </li>
+
+        <li class="bulletpoints">
+          A description of the
+          <a href="#DOM" class="bulletpoint-link js"
+            >Document Object Model (DOM)</a
+          >
+        </li>
+
+        <li class="bulletpoints">
+          <a href="#arraysObj" class="bulletpoint-link js">Arrays vs Objects</a>
+          and the differece in accessing properties.
+        </li>
+        <li class="bulletpoints">
+          <a href="#functions" class="bulletpoint-link js">Functions!</a>
+          And why they are helpful.
+        </li>
+      </ul>
+      <p class="main-text">Use the links to jump to different ssections</p>
+      <p class="main-text">Alright, Lets get to the explainations!</p>
+    </div>
+
+    <div class="section-card">
+      <h2 class="title" id="relationship">
+        The Relationship between HTML, CSS and JavaScript
+      </h2>
+      <p class="main-text">
+        Perhaps a simple analogy to describe this relationship is like planting
+        a seed and encouraging it to grow?
+      </p>
+      <p class="main-text">
+        The seed, soil and planter pot would represent HTML - the structure and
+        foundation. To encourage the plant to grow, we need water, food and
+        light. These three processes would represent JavaScript, the
+        functionalities required for any action to happen. And finally, when the
+        seed blossoms in a beautiful cacti-hybrid with leaves equally spiky as
+        they are purple(?) - This is the CSS. We can even re-pot the plant into
+        an oddly shaped, stained glass window painted clay pot!
+      </p>
+      <a href="#js-links" class="back-to-top">Back to links list</a>
+    </div>
+
+    <div class="section-card">
+      <h2 class="title" id="control-flow">
+        Control Flow and Loops - Using an example from everyday life
+      </h2>
+      <p class="main-text">
+        Control flow is simply the order in which a computer will execute the
+        statements, instructions or functions written. It is usually executed
+        from top to bottom.
+      </p>
+      <p class="main-text">
+        A good example (That I really want to incorporate into my life) is going
+        to the gym. The process may look something like this:
+      </p>
+      <ul class="list">
+        <li class="bulletpoints">Pack your gym bag</li>
+        <li class="bulletpoints">Head to the gym</li>
+        <li class="bulletpoints">Workout</li>
+        <li class="bulletpoints">Cooldown</li>
+        <li class="bulletpoints">Leave the Gym</li>
+      </ul>
+
+      <p class="main-text">
+        Generally, the process of going to the gym wouldn’t change. This would
+        be considered the control flow.
+      </p>
+      <p class="main-text">
+        Where the flow could change however is during the actual workout. We
+        could introduce a loop to dictate how many sets we do before we leave
+        the gym. A loop is simple set of instructions that has some conditions.
+        In this example, the condition is how many times we do a single set.
+        Lets say we are working on our core. One set could look like:
+      </p>
+      <ul class="list">
+        <li class="bulletpoints">Crunches x 20</li>
+        <li class="bulletpoints">Hip Dips x 45sec</li>
+        <li class="bulletpoints">Leg Raise x 45secs</li>
+      </ul>
+
+      <p class="main-text">The process would then look like:</p>
+      <ul class="list">
+        <li class="bulletpoints">Pack your gym bag</li>
+        <li class="bulletpoints">Head to the gym</li>
+        <li class="bulletpoints">
+          Workout
+          <ul class="list js">
+            <li class="bulletpoints js">Do One Set of core exersizes</li>
+            <li class="bulletpoints js">
+              Question why you like pain while doing another set
+            </li>
+            <li class="bulletpoints js">Finish strong with One. More. Set!</li>
+          </ul>
+        </li>
+        <li class="bulletpoints">Cooldown</li>
+        <li class="bulletpoints">Leave the Gym</li>
+      </ul>
+      <p class="main-text">
+        Using the loop, we decided to do three sets before we leave the gym. The
+        loop would run through each set untill it has been fufilled, and we can
+        say that we are one step closer to the defined six pack we all crave for
+        summer!
+      </p>
+      <a href="#js-links" class="back-to-top">Back to links list</a>
+    </div>
+
+    <div class="section-card">
+      <h2 class="title" id="DOM">
+        The one about the Document Object Model - DOM
+      </h2>
+      <p class="main-text">Lets start by breaking down each word of the DOM:</p>
+      <ul class="list">
+        <li class="bulletpoints js">Document - just the webpage.</li>
+        <li class="bulletpoints js">
+          Object - Every element within your document is an object.
+        </li>
+        <li class="bulletpoints js">
+          Model - How each object in the document is displayed: tree style.
+        </li>
+      </ul>
+      <h3 class="question">What can we do?</h3>
+      <p class="main-text">
+        Imagine that you are a lemur monkey named Jan, perched atop a totara
+        tree overlooking the beautiful landscape. You decide that you want climb
+        down the tree towards a blue branch that has a couple bunches of yellow
+        bananas growing on it. Like the handy monkey you are, you decide to
+        change the color of one of the bunches to their natural color of green -
+        They look more appetizing to you that way. You also feel the need to
+        place a nametag on your bananas, so the other lemurs won’t steal them.
+        You would naturally just climb down with ease and claim what’s yours
+        right?!
+      </p>
+
+      <p class="main-text">
+        It’s the same with the DOM. Using different methods or selectors, we can
+        traverse the DOM to the specific element and interact with it,
+        manipulate it to suit our needs.
+      </p>
+      <p class="main-text">Lets take this a look at this example code:</p>
+
+      <img src="/images/DOMExample-code.jpg" alt="code snippet" class="image" />
+      <p class="main-text">
+        This is what the code would look like in the browser:
+      </p>
+      <img
+        src="/images/DOMExample-browserView.jpg"
+        alt="Browser view of code snippet"
+        class="image"
+      />
+      <p class="main-text">
+        Using a couple of methods, we can navigate through the tree, pick a
+        bunch of bananas and claim it for ourselves!
+      </p>
+
+      <p class="main-text">
+        We use the query selector to select the p element using the id
+        ‘jans-bananas’.<br />
+
+        We can then manipulate the color of the bananas using the style property
+        and adding the color value to change it to green.<br />
+
+        We can also use the innerHTML property to stake our claim on the newly
+        colored bananas!
+      </p>
+      <img
+        src="/images/DOMExample-browserViewAfter.jpg"
+        alt="Text that describe a totara tree, with a blue branch, 2 bunches of yellow bananas and jans green bananas "
+        class="image"
+      />
+      <p class="main-text">
+        This is just a small taste of what is possible when we traverse the land
+        of the DOM. The different selectors, methods, and properties we can
+        manipulate are almost endless.
+      </p>
+
+      <a href="#js-links" class="back-to-top">Back to links list</a>
+    </div>
+
+    <div class="section-card">
+      <h2 class="title" id="arraysObj">
+        Arrays vs Objects - and the difference in accessing properties
+      </h2>
+      <h3 class="question">What is an array?</h3>
+      <p class="main-text">
+        An array is a list that is used to group similar types of data. The
+        variable or name attached to this would usually describe what the list
+        is about. The items in the list is known as a value.
+      </p>
+      <p class="main-text">An example of an array would look like this:</p>
+      <img
+        src="/images/fruits-array.jpg"
+        alt="A code snippet about an array of fruits"
+        class="image"
+      />
+
+      <h3 class="question">So an object is...?</h3>
+      <p class="main-text">
+        An object is also a list, but unlike an array, and object can hold
+        different values within the collection. Each value will have a name
+        attached to it. This is known as a name/value pair. Each name/value pair
+        is known as a property of an object.
+      </p>
+
+      <p class="main-text">
+        If we take the array example from above, this is what the apple would
+        look like as an object:
+      </p>
+
+      <img
+        src="/images/fruits-object.jpg"
+        alt="A code snippet about an object list describing three different fruits"
+        class="image"
+      />
+      <p class="main-text">
+        Note that with an object, we can list values like an array, but we can
+        also describe the object using the name/values pairs.
+      </p>
+
+      <h3 class="question">So the difference is...?</h3>
+      <p class="main-text">
+        To access values in an array we use the position of each value. This is
+        know as the index value. Each value is assigned a an index number
+        starting with 0. This is what that would look like:
+      </p>
+      <img
+        src="/images/array-index-position.jpg"
+        alt="A code snippet describing an array of fruits and their index position"
+        class="image"
+      />
+      <p class="main-text">
+        We access the full array by referring to the name of the array. To
+        access a single item in the array, we use the index position. Index
+        position [1] would return “Oranges”.
+      </p>
+
+      <p class="main-text">
+        To access a value in an object we use the name of the object paired with
+        the name of the value we want to access. Using the same example, this is
+        what that looks like:
+      </p>
+
+      <img
+        src="/images/object-access-property.jpg"
+        alt="A code snippet describinh how to acces the color property of the fruit object"
+        class="image"
+      />
+      <p class="main-text">
+        This will return the fruit color value that is store in the name/pair
+        object.
+      </p>
+      <p class="main-text">
+        The biggest difference between an array and an object, is that an object
+        can hold different values types within the one object. An array holds a
+        list of values which are similar in type.
+      </p>
+      <a href="#js-links" class="back-to-top">Back to links list</a>
+    </div>
+
+    <div class="section-card">
+      <h2 class="title" id="functions">Functions! And why they are handy</h2>
+      <p class="main-text">
+        A function is a set of instructions designed for a particular task.
+        Functions are set to be executed whenever we call them to do so.
+      </p>
+      <p class="main-text">
+        A simple example of this is adding two numbers together. we can create a
+        set of instructions that takes two numbers, adds them together and gives
+        backs the answer.
+      </p>
+      <p class="main-text">The example would look like this:</p>
+      <img
+        src="/images/function-addTwoNum.jpg"
+        alt="A code snippet about a function that adds two numbers together"
+        class="image"
+      />
+      <p class="main-text">
+        Note that the (a, b) are parameters, a name that can store values in
+        later, and give to our function to give us a result.
+      </p>
+      <p class="main-text">
+        The reason why functions functions are helpful is because we can create
+        a set of instructions for a particular task, and then reuse them as many
+        times as we want, and expect a specific result to be given back.
+      </p>
+
+      <a href="#js-links" class="back-to-top">Back to links list</a>
+    </div>
+    <!-- <ul class="list">
+      <li class="bulletpoints">bulletpoint</li>
+      <li class="bulletpoints">bulletpoint</li>
+      <li class="bulletpoints">bulletpoint</li>
+    </ul>
+
+    <h2 class="title">Section Title</h2>
+
+    <p class="main-text">Blogpost text</p>
+    <div class="section-card">
+      <h3 class="question"></h3>
+
+      <p class="main-text">Blogpost text</p>
+    </div> -->
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="/" class="nav-link">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a href="/#techposts">BLOG POSTS</a>
+        </li>
+      </ul>
+      <small>Moonlit Coder . 2022</small>
+    </div>
+  </footer>
+</html>
