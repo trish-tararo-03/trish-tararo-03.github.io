@@ -337,7 +337,10 @@ background: radial-gradient(circle, rgba(24,40,72,1) 20%, rgba(75,108,183,1) 45%
 
   .question {
     font-size: 1.4rem;
+    padding: 1em 0;
   }
+
+ 
 
   /* blockquote styling */
   .quote {
@@ -347,13 +350,17 @@ background: radial-gradient(circle, rgba(24,40,72,1) 20%, rgba(75,108,183,1) 45%
     font-weight: 500;
   }
 
+  /* list styling */
+   
   #js-links > li, .list  {
    margin: 0 auto;
    width: 80%;
+   font-size: 1.15rem;
     
   }
 
-  /* .back-to-link-list {
-   fixl link to align with text
-  } */
+  .back-to-link-list {
+   margin-left: 10%;
+   padding: 1em 0;
+  }
 }
