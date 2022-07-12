@@ -207,7 +207,7 @@ background: radial-gradient(circle, rgba(24,40,72,1) 20%, rgba(75,108,183,1) 45%
 
  }
 
- .back-to-link-list {
+ .back-to-link-list, .resource-link {
   font-family: 'Martel', serif ;
   padding: .5em;
   text-decoration: underline;
@@ -363,7 +363,7 @@ background: radial-gradient(circle, rgba(24,40,72,1) 20%, rgba(75,108,183,1) 45%
     
   }
 
-  .back-to-link-list {
+  .back-to-link-list, .resource-link {
    margin-left: 10%;
    padding: 1em 0;
   }
