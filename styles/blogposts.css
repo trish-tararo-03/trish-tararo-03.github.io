@@ -147,7 +147,7 @@ background: radial-gradient(circle, rgba(24,40,72,1) 20%, rgba(75,108,183,1) 45%
   color: black;
 }
 
-/* Blog Post Styling */
+/* --- Blog Post Styling --- */
  .blog-date {
   font-size: .9rem;
   font-style: italic;
@@ -176,9 +176,10 @@ background: radial-gradient(circle, rgba(24,40,72,1) 20%, rgba(75,108,183,1) 45%
 
  .question {
   font-size: 1.15rem;
-  padding: .5rem;
+  padding: .5rem 0;
   margin: 1em;
   line-height: 1.2;
+  text-align: left;
 } 
 
  .main-text {
@@ -212,7 +213,13 @@ background: radial-gradient(circle, rgba(24,40,72,1) 20%, rgba(75,108,183,1) 45%
   padding: .5em;
   text-decoration: underline;
  }
- /* List Styles */
+
+ .video {
+  width: 90%;
+  height: auto;
+ }
+ 
+ /* --- List Styles --- */
  .list {
   margin: 0;
   
@@ -231,7 +238,7 @@ background: radial-gradient(circle, rgba(24,40,72,1) 20%, rgba(75,108,183,1) 45%
 
 
 
- /* Blockquote Styling */
+ /* --- Blockquote Styling --- */
 
  .quote {
   display:flex;
@@ -278,7 +285,7 @@ background: radial-gradient(circle, rgba(24,40,72,1) 20%, rgba(75,108,183,1) 45%
 
 }
 
-/* Media Queries */
+/* --- Media Queries --- */
 @media screen and (min-width:768px){
   .main-title {
     font-size: 2rem;
