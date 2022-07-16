@@ -70,15 +70,20 @@ font-family: 'Work Sans', sans-serif;
 
 h1, h2, h3 {
   font-family: 'Roboto Condensed', sans-serif;
+  color: #F6F9FF;
 }
 
 h4, p {
-  font-family: 'Martel', serif;;
+  font-family: 'Martel', serif;
+  color: #F6F9FF;
 }
+
+/* === Global Styling === */
 .container {
   width: 80%;
   height: auto;
   margin: 0 auto;
+  
 
   /* border: 3px solid red; */
 }
@@ -89,10 +94,18 @@ h4, p {
   align-items: center;
  }
 
+ .main {
+  background-color:  #323b48 ;
+
+}
+
+
+
  /* header styling */
  .header {
-  background: rgb(24,40,72);
-background: radial-gradient(circle, rgba(24,40,72,1) 20%, rgba(75,108,183,1) 45%, rgba(11,25,52,1) 75%);
+  background-image: url(/images/blood\ moon.jpg);
+  background-position-y: 31%;
+  background-position-x: center;
  }
 
  /* Nav Styling */
@@ -117,7 +130,8 @@ background: radial-gradient(circle, rgba(24,40,72,1) 20%, rgba(75,108,183,1) 45%
 .nav-item {
   list-style: none;
   text-align: center;
-  margin: .5em;
+  margin: 0em .5em;
+
 }
 
 .nav-item > a {
@@ -212,7 +226,9 @@ background: radial-gradient(circle, rgba(24,40,72,1) 20%, rgba(75,108,183,1) 45%
   font-family: 'Martel', serif ;
   padding: .5em;
   text-decoration: underline;
+  color: #e47545;
  }
+
 
  .video {
   width: 90%;
@@ -229,11 +245,17 @@ background: radial-gradient(circle, rgba(24,40,72,1) 20%, rgba(75,108,183,1) 45%
   padding: 0.5em;
   font-family: 'Martel', serif;
   list-style-type:square;
+  color: #F6F9FF;
   
+ }
+
+ .bulletpoint-link.js {
+  color: #e47545;
  }
 
  .js {
   list-style-type: decimal;
+ 
  }
 
 
@@ -279,11 +301,18 @@ background: radial-gradient(circle, rgba(24,40,72,1) 20%, rgba(75,108,183,1) 45%
   background-color: #182848;
   color: #fffffe;
   text-align: center;
-  margin-top: .5em;
+ 
   font-family: 'Roboto Condensed', sans-serif;
   /* border: 2px solid red; */
 
 }
+
+.footer.nav-menu{
+  margin: 0;
+  padding: 1rem;
+}
+
+
 
 /* --- Media Queries --- */
 @media screen and (min-width:768px){
