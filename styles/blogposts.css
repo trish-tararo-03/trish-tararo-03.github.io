@@ -234,6 +234,11 @@ h4, p {
   width: 90%;
   height: auto;
  }
+
+ .highlight {
+  background-color: #0E5B53;
+  padding: .5em;
+ }
  
  /* --- List Styles --- */
  .list {
